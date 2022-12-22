@@ -1,0 +1,25 @@
+package Market;
+
+import java.util.Scanner;
+
+public class MainMenu {
+	Scanner inin= new Scanner(System.in);
+	MainMenu() {
+		for(;;) {
+			menu();
+			int selMenu=inin.nextInt();
+			inin.nextLine();
+			if(selMenu==1) {
+				new Array_GoodsManager();        // 선생님 필기는 GoodsManager()
+			} else if (selMenu==2) {
+				new Member();
+			}
+		}
+	}
+	
+	public void menu() {
+		System.out.println("1. 물건관리");
+		System.out.println("2. 쇼핑하기");
+	}
+
+}

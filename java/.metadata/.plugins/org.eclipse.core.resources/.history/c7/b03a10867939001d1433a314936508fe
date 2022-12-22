@@ -1,0 +1,28 @@
+package Market;
+
+import java.util.ArrayList;
+
+public class Member {
+	Member() {
+		shopping();
+	}
+	
+	String name = "Guest";
+	//고객별로 쇼핑이 가능하도록 확장
+	/*String id = null;
+	 * int point=0;
+	 * String addr=null;
+	 */
+	
+	ArrayList<Goods> basket = new ArrayList<>();
+	
+	public void shopping() {
+		System.out.println("쇼핑 공사중");
+		/*
+		 * 1. 물건의 리스트보기
+		 * 2. 물건 선택하기
+		 * 3. 자신의 장바구니에 담기
+		 */
+	}
+
+}

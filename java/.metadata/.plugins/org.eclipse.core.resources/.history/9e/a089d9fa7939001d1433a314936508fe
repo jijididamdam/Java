@@ -1,0 +1,48 @@
+package Market;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Member {
+
+	Scanner in= new Scanner(System.in);
+	ArrayList<Goods> basket = new ArrayList<>();
+	Array_GoodsManager aa = new Array_GoodsManager();
+	String name = "Guest";
+	//고객별로 쇼핑이 가능하도록 확장
+	/*String id = null;
+	 * int point=0;
+	 * String addr=null;
+	 */
+	
+	public void goShopping() {
+		for(;;) {
+			System.out.println("1. 구매하기");
+			System.out.println("2. 장바구니");
+			System.out.println("3. 이전메뉴");
+			int selMenu = in. nextInt();
+			in.nextLine();
+			if(selMenu==1) {
+				shopping();
+			} else if (selMenu==2) {
+				
+			} else if (selMenu==3) {
+				break;
+			}
+		}
+	}
+	//코드 5줄로 쇼핑하기 > 구매하기 누르면 물건의 목록이 뜨게 하라
+	
+	
+	public void shopping() {
+		//System.out.println("쇼핑 공사중");
+		/*
+		 * 1. 물건의 리스트보기
+		 * 2. 물건 선택하기
+		 * 3. 자신의 장바구니에 담기
+		 */		
+		aa.listGoods();
+		
+	}
+
+}
